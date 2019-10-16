@@ -1,0 +1,27 @@
+.main-container{
+    height: auto;
+}
+.sub-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    background-color:rgb(40, 53, 147);
+    align-items: center;
+}
+.two-icons img, .six-icons img{
+    width: 20px;
+    height: 20px;
+}
+.two-icons span{
+    padding: 15px;
+}
+.six-icons span{
+    padding: 15px;
+}
+.two-icons button, .six-icons button{
+    background: none;
+    border: 0px;
+    outline: none;
+}
