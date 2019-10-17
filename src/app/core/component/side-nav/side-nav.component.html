@@ -8,121 +8,127 @@
             <div class="profile-container">
               <div class="detail-container">
                 <span class="profile-img"><img src="../../../../assets/images/profile.png" alt="picture"></span>
-                <span class="data">
+                <span class="data">                 
                   <h4>Durgesh Gupta</h4>
                   <h5>Web developer</h5>
-                  <p>Member since May.2016</p>
+                  <p>Member since May 2016</p>
                 </span>
               </div>
               <div class="icon-container">
-                <a href="#"><img src="../../../../assets/images/user.png" alt="avatar"></a>
-                <a href="#"><img src="../../../../assets/images/message-closed-envelope.png" alt="message"></a>
-                <a href="#"><img src="../../../../assets/images/power.png" alt="power"></a>
+                <a href="#"><img class="icon-container-img" src="../../../../assets/images/user.png" alt="avatar"></a>
+                <a href="#"><img class="icon-container-img" src="../../../../assets/images/message-closed-envelope.png" alt="message"></a>
+                <a href="#"><img class="icon-container-img" src="../../../../assets/images/power.png" alt="power"></a>
               </div>
             </div>
             <div class="menu-container">
-              <div class="dashboard div-menu-container">
-                <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/dashboard.png" alt="dashboard"></span>
+              <div class="dashboard">
+                <a href="#" class="a-menu-dashboard">
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/dashboard.png" alt="dashboard"></span>
                     <span class="menu-dash">Dashboard</span>
                 </a>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/friends.png" alt="Users"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/friends.png" alt="Users"></span>
                     <span>User</span>
                 </a>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu" (click)="openSubDropdown()">
-                    <span class="icon-menu"><img src="../../../../assets/images/laptop.png" alt="UI Feature"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/laptop.png" alt="UI Feature"></span>
                     <span>UI Feature</span>
-                    <span class="up-icon"><img src="../../../../assets/images/caret-arrow-up.png" alt="arrow up"></span>
+                    <img class="up-icon" [class.flip]="!subDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="arrow up">
                 </a>
+                <div class="sub-dropdown" [class.hide]="subDropdownHidden">
+                  <a href="#" class="a-sub-menu" *ngFor="let drop of drop1">
+                    <span class="icon-menu"><img class="icon-container-img" src="{{drop.img}}" alt="{{drop.value}}"></span>
+                    <span>{{drop.value}}</span>
+                  </a>
+                </div>
               </div>
-              <div class="sub-dropdown" [class.hide]="subDropdownHidden">
-                <a href="#" class="a-menu">
-                  <span class="icon-menu"><img src="../../../../assets/images/friends.png" alt="Buttons"></span>
-                  <span>Buttons</span>
-                </a>
-                <a href="#" class="a-menu">
-                  <span class="icon-menu"><img src="../../../../assets/images/friends.png" alt="Cards"></span>
-                  <span>User</span>
-                </a>
-                <a href="#" class="a-menu">
-                  <span class="icon-menu"><img src="../../../../assets/images/friends.png" alt="List"></span>
-                  <span>List</span>
-                </a>
-                <a href="#" class="a-menu">
-                  <span class="icon-menu"><img src="../../../../assets/images/friends.png" alt="Grid"></span>
-                  <span>Grid</span>
-                </a>
-
-              </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu" >
-                    <span class="icon-menu"><img src="../../../../assets/images/list.png"
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/list.png"
                         alt="Dynamic Menu"></span>
                     <span>Dynamic Menu</span>
                 </a>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/black-back-closed-envelope-shape.png" alt="Mailbox"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/black-back-closed-envelope-shape.png" alt="Mailbox"></span>
                     <span>Mailbox</span>
                 </a>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/comment.png" alt="Chat"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/comment.png" alt="Chat"></span>
                     <span>Chat</span>
                 </a>
               </div>
-              <div class="div-menu-container">
-                <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/code.png"
+              <div>
+                <a href="#" class="a-menu" (click)="openSubFormDropdown()">
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/code.png"
                         alt="Form Controls"></span>
                     <span>Form Controls</span>
-                    <span class="up-icon"><img src="../../../../assets/images/caret-arrow-up.png" alt="up arrow"></span>
+                    <img class="up-icon" [class.flip]="!subFormDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
+                <div class="sub-dropdown" [class.hide]="subFormDropdownHidden">
+                  <a href="#" class="a-sub-menu" *ngFor="let form of form">
+                    <span class="icon-menu"><img class="icon-container-img" src="{{form.img}}" alt="{{form.value}}"></span>
+                    <span>{{form.value}}</span>
+                  </a>
+                </div>
               </div>
-              <div class="div-menu-container">
-                <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/grid.png" alt="Tables"></span>
+              <div>
+                <a href="#" class="a-menu" (click)="openSubTableDropdown()">
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/grid.png" alt="Tables"></span>
                     <span>Tables</span>
-                    <span class="up-icon"><img src="../../../../assets/images/caret-arrow-up.png" alt="up arrow"></span>
+                    <img class="up-icon" [class.flip]="!subTableDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
+                <div class="sub-dropdown" [class.hide]="subTableDropdownHidden">
+                  <a href="#" class="a-sub-menu" *ngFor="let table of table">
+                    <span class="icon-menu"><img class="icon-container-img" src="{{table.img}}" alt="{{table.value}}"></span>
+                    <span>{{table.value}}</span>
+                  </a>
+                </div>
               </div>
-              <div class="div-menu-container">
-                <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/dashboard.png" alt="Pages"></span>
+              <div>
+                <a href="#" class="a-menu" (click)= "openSubPageDropdown()">
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/pages.png" alt="Pages"></span>
                     <span>Pages</span>
-                    <span class="up-icon"><img src="../../../../assets/images/caret-arrow-up.png" alt="up arrow"></span>
+                    <img class="up-icon" [class.flip]="!subPageDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
+                <div class="sub-dropdown" [class.hide]="subPageDropdownHidden">
+                  <a href="#" class="a-sub-menu" *ngFor="let page of page">
+                    <span class="icon-menu"><img class="icon-container-img" src="{{page.img}}" alt="{{page.value}}"></span>
+                    <span>{{page.value}}</span>
+                  </a>
+                </div>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/calendar.png" alt="Schedule"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/calendar.png" alt="Schedule"></span>
                     <span>Schedule</span>
                 </a>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/dashboard.png" alt="Maps"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/map2.png" alt="Maps"></span>
                     <span>Maps</span>
-                    <span class="up-icon"><img src="../../../../assets/images/caret-arrow-up.png" alt="up arrow"></span>
+                    <img class="up-icon" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
               </div>
-              <div class="div-menu-container">
+             
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/dashboard.png" alt="Charts"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/dashboard.png" alt="Charts"></span>
                     <span>Charts</span>
-                    <span class="up-icon"><img src="../../../../assets/images/caret-arrow-up.png" alt="up arrow"></span>
+                    <img class="up-icon" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
               </div>
-              <div class="div-menu-container">
+              <div>
                 <a href="#" class="a-menu">
-                    <span class="icon-menu"><img src="../../../../assets/images/dashboard.png" alt="Drag & Drop"></span>
+                    <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/dashboard.png" alt="Drag & Drop"></span>
                     <span>Drag & Drop</span>
                 </a>
               </div>  
