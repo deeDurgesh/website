@@ -161,3 +161,6 @@ div.menu-container .sub-dropdown.hide {
   height: 0px;
   overflow: hidden;
 }
+body > app-root > app-side-nav > div > div > div.menu-container > div:nth-child(3) > a > span.up-icon > img.icon-down{
+    transform: rotate(180deg);
+}
