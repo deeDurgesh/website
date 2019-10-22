@@ -3,7 +3,7 @@
     flex-wrap: nowrap;
 }
 
-:host .left {
+:host .header {
   flex: 1;
 }
 
