@@ -1,0 +1,30 @@
+
+  <div class="card2">
+    <mat-card>
+      <div class="form-container">
+        <mat-form-field>
+            <input matInput placeholder="Title">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="Icon">
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="RouterLink">
+          </mat-form-field>
+          <mat-checkbox>Has Sub Menu</mat-checkbox>
+          <mat-form-field>
+            <input matInput placeholder="Href">
+          </mat-form-field>
+          <mat-radio-button class="example-margin" value="blank">_blank</mat-radio-button>
+          <mat-radio-button class="example-margin" value="self">_self</mat-radio-button>
+          <mat-form-field>
+            <mat-select placeholder="Parent Menu">
+              <mat-option *ngFor="let sel of menuSelect" value="{{select}}"></mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-button color="primary">Add New Menu Item</button>    
+      </div>
+    </mat-card>
+ </div>

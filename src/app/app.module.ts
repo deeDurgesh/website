@@ -8,6 +8,15 @@ import { DashboardComponent } from './core/component/dashboard/dashboard.compone
 import { DynamicMenuComponent } from './core/component/dynamic-menu/dynamic-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+// MDB Angular Free
+import { BreadcrumbModule, IconsModule } from 'angular-bootstrap-md';
+import { BreadcrumbComponent } from './core/component/breadcrumb/breadcrumb.component';
+import { UserComponent } from './core/component/user/user.component'
 
 @NgModule({
   declarations: [
@@ -15,13 +24,22 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     SideNavComponent,
     HeaderComponent,
     DashboardComponent,
-    DynamicMenuComponent
+    DynamicMenuComponent,
+    BreadcrumbComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatButtonModule,
+    MatCardModule,
+    MatSelectModule,
+    IconsModule,
+    BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
