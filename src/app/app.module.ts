@@ -14,9 +14,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 // MDB Angular Free
-import { BreadcrumbModule, IconsModule } from 'angular-bootstrap-md';
+
 import { BreadcrumbComponent } from './core/component/breadcrumb/breadcrumb.component';
-import { UserComponent } from './core/component/user/user.component'
+import { UserComponent } from './core/component/user/user.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +38,6 @@ import { UserComponent } from './core/component/user/user.component'
     MatButtonModule,
     MatCardModule,
     MatSelectModule,
-    IconsModule,
-    BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
