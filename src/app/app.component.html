@@ -1,6 +1,6 @@
 <app-side-nav [class.hide]="hide" [ngClass]="{'shadow': true}"></app-side-nav>
 <div class="header">
-   
     <app-header (sideNavToggle)="toggleSideNav()"></app-header>
     <app-breadcrumb [paths]="['User']"></app-breadcrumb>
+    <app-dynamic-menu></app-dynamic-menu>
 </div>

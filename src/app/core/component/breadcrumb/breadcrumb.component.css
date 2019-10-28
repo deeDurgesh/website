@@ -5,28 +5,26 @@
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2),
     0 6px 10px 0 rgba(0, 0, 0, .14),
     0 1px 18px 0 rgba(0, 0, 0, .12);
-    margin: 10px;
+    margin: 15px;
     border-radius: 8px;
+    align-items: center;
+    height:35px;
 }
-mdb-breadcrumb{
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;   
+.bread-menu span{
+    vertical-align: middle;
 }
-mdb-breadcrumb img{
+.bread-menu img{
     width: 20px;
     height: 20px;
-    padding-right: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    vertical-align: middle;
 }
 .bread{
     text-decoration: none;
+   padding-left:20px;
+   padding-right: 8px;
 }
 .menu-name::before{
     content: "/";
-}
-.bread-menu, .menu-name{
-    display: inline-block;
-}
-.bread-menu span{
-    margin-right: 5px;
 }
