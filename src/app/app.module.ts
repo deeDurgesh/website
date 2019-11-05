@@ -13,10 +13,10 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
-// MDB Angular Free
-
 import { BreadcrumbComponent } from './core/component/breadcrumb/breadcrumb.component';
 import { UserComponent } from './core/component/user/user.component';
+import { CommonRoutingComponent } from './core/component/common-routing/common-routing.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { UserComponent } from './core/component/user/user.component';
     DashboardComponent,
     DynamicMenuComponent,
     BreadcrumbComponent,
-    UserComponent
+    UserComponent,
+    CommonRoutingComponent
   ],
   imports: [
     BrowserModule,

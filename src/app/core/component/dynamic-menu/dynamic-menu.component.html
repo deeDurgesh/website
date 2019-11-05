@@ -1,32 +1,42 @@
-  <div class="card2">
-    <mat-card>
-      <div class="form-container">
+<div class="form-container">
+    <div class="internal-form-container">
         <mat-form-field>
-            <input matInput placeholder="Title">
-          </mat-form-field>
-          <mat-form-field>
-            <mat-select placeholder="Icon">
-              <mat-option value="option">Option</mat-option>
-            </mat-select>
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="RouterLink">
-          </mat-form-field>
-          <mat-checkbox>
-            <input type="checkbox" name="has_sub_menu" value="has_sub-menu">Has sub menu
-          </mat-checkbox>
-          
-          <mat-form-field>
-            <input matInput placeholder="Href">
-          </mat-form-field>
-          <mat-radio-button class="example-margin" value="blank">_blank</mat-radio-button>
-          <mat-radio-button class="example-margin" value="self">_self</mat-radio-button>
-          <mat-form-field>
-            <mat-select placeholder="Parent Menu">
-              <mat-option *ngFor="let sel of menuSelect" value="{{select}}"></mat-option>
-            </mat-select>
-          </mat-form-field>
-          <button mat-button color="primary">Add New Menu Item</button>    
+              <input matInput placeholder="title">
+        </mat-form-field>    
+      <div class="icon-io">
+        <select name="icon">
+          <option value="home">Home</option>
+          <option value="user">User</option>
+          <option value="item3">Item3</option>
+          <option value="item4">Item4</option>
+          <option value="item5">Item5</option>
+          <option value="item6">Item6</option>
+          <option value="item7">Item7</option>
+          <option value="item8">Item8</option>
+          <option value="item9">Item9</option>
+        </select>
+        <span></span>
       </div>
-    </mat-card>
- </div>
+        <div class="RouterLink-io">
+          <input type="text" name="router-link" placeholder="RouterLink">
+          <span></span>
+        </div>
+        <div class="checkbox-io">
+          <input type="checkbox" name="hasSubMenu">
+        </div>
+        <div class="href-io">
+          <input type="text" name="href" placeholder="Href">
+        </div>
+        <div class="twoCheckbox-io">
+          <input type="checkbox" name="blank">
+          <input type="checkbox" name="self">
+        </div>
+        <div class="parentMenu-io">
+          <select name="parentMenu">
+            <option value="selectParent" selected>--select parent menu--</option>
+            <option *ngFor="let menu of menuSelect" value="{{menu}}">{{menu}}</option>
+          </select>
+        </div>
+        <button name="submit">Add New Menu Item</button>
+    </div>
+  </div>
