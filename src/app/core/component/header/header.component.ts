@@ -7,13 +7,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent{
   @Output() sideNavToggle = new EventEmitter<void>();
-
+  openSerachBar = false;
   constructor() { }
 
   toggleNav() {
     this.sideNavToggle.emit();
   }
   searchBar(){
-    
+    this.openSerachBar = !this.openSerachBar;
   }
 }

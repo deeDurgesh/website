@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { DropServiceService } from '../../../services/drop-service.service';
 @Component({
   selector: 'app-side-nav',
@@ -10,6 +10,8 @@ export class SideNavComponent implements OnInit {
   subFormDropdownHidden = true;
   subTableDropdownHidden = true;
   subPageDropdownHidden = true;
+  
+
   drop1: any[] = [
     { img: "../../../../assets/images/black-keyboard-with-white-keys.png", value: "Buttons" },
     { img: "../../../../assets/images/friends.png", value: "Cards" },
@@ -51,5 +53,7 @@ export class SideNavComponent implements OnInit {
   openSubPageDropdown() {
     this.subPageDropdownHidden = !this.subPageDropdownHidden;
   }
+  navigate(){
 
+  }
 }

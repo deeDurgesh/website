@@ -5,12 +5,15 @@
             <span><a href="#"><img src="../../../../assets/images/man-user.png" alt="user"></a></span>
         </div>
         <div class="six-icons">
-            <span><button (click)="searchBar()"><img src="../../../../assets/images/search.png" alt="search"></button></span>
-            <span><a href="#"><img src="../../../../assets/images/flag.png" alt="flag"></a></span>
-            <span><a href="#"><img src="../../../../assets/images/switch-to-full-screen-button.png" alt="square"></a></span>
-            <span><a href="#"><img src="../../../../assets/images/grid.png" alt="application"></a></span>
-            <span><a href="#"><img src="../../../../assets/images/notification.png" alt="notification"></a></span>
-            <span><a href="#"><img src="../../../../assets/images/user (1).png" alt="profile"></a></span>
+            <div class="search">
+                 <span class="spacebar"><input [class.close]="openSerachBar" type="text" placeholder="Type to search..."></span>
+                 <span class="space"><button (click)="searchBar()"><img src="../../../../assets/images/search.png" alt="search"></button></span>
+            </div>
+            <span class="space"><a href="#"><img src="../../../../assets/images/flag.png" alt="flag"></a></span>
+            <span class="space"><a href="#"><img src="../../../../assets/images/switch-to-full-screen-button.png" alt="square"></a></span>
+            <span class="space"><a href="#"><img src="../../../../assets/images/grid.png" alt="application"></a></span>
+            <span class="space"><a href="#"><img src="../../../../assets/images/notification.png" alt="notification"></a></span>
+            <span class="space"><a href="#"><img src="../../../../assets/images/user (1).png" alt="profile"></a></span>
         </div>
     </div>
 </div>

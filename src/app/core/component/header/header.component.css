@@ -17,11 +17,36 @@
 .two-icons span{
     padding: 15px;
 }
-.six-icons span{
-    padding: 15px;
+.space{
+    padding-right: 15px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+.spacebar{
+    padding-right: 10px;
+}
+.spacebar input{
+    transition: width .3s ease;
+    border-radius: 15px;
+    width: 250px;
+    height: 25px;
+    outline: none;
+    overflow: hidden;
+}
+.spacebar input.close{
+    width: 0px;   
 }
 .two-icons button, .six-icons button{
     background: none;
     border: 0px;
     outline: none;
+}
+.six-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
