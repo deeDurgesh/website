@@ -1,6 +1,6 @@
-<app-side-nav [class.hide]="hide" [ngClass]="{'shadow': true}"></app-side-nav>
+<app-side-nav [class.hide]="hide" [ngClass]="{'shadow': true}" [profileContainerOpen]="profileContainerOpen"></app-side-nav>
 <div class="header">
-    <app-header (sideNavToggle)="toggleSideNav()"></app-header>
+    <app-header (sideNavToggle)="toggleSideNav()" (closeContainer)="closeProfileContainer()"></app-header>
     <app-breadcrumb [paths]="['User']"></app-breadcrumb>
     <app-common-routing></app-common-routing>
 </div>

@@ -7,6 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent{
   @Output() sideNavToggle = new EventEmitter<void>();
+  @Output() closeContainer = new EventEmitter<void>();
   openSerachBar = false;
   constructor() { }
 
@@ -15,5 +16,8 @@ export class HeaderComponent{
   }
   searchBar(){
     this.openSerachBar = !this.openSerachBar;
+  }
+  closeProfileContainer(){
+    this.closeContainer.emit();
   }
 }

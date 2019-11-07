@@ -38,7 +38,8 @@
     overflow: hidden;
 }
 .spacebar input.close{
-    width: 0px;   
+    width: 0px;  
+    display: none; 
 }
 .two-icons button, .six-icons button{
     background: none;

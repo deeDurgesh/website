@@ -1,42 +1,21 @@
 <div class="form-container">
-    <div class="internal-form-container">
-        <mat-form-field>
-              <input matInput placeholder="title">
-        </mat-form-field>    
-      <div class="icon-io">
+      <div class="form-style-6">
+        <form>
+        <input type="text" name="field1" placeholder="Title"/>
         <select name="icon">
-          <option value="home">Home</option>
-          <option value="user">User</option>
-          <option value="item3">Item3</option>
-          <option value="item4">Item4</option>
-          <option value="item5">Item5</option>
-          <option value="item6">Item6</option>
-          <option value="item7">Item7</option>
-          <option value="item8">Item8</option>
-          <option value="item9">Item9</option>
+          <option value="icon">icon</option>
+          <option value=""></option>
         </select>
-        <span></span>
-      </div>
-        <div class="RouterLink-io">
-          <input type="text" name="router-link" placeholder="RouterLink">
-          <span></span>
+        <input type="text" name="field2" placeholder="routerLink"/>
+        <input type="checkbox" name="hasSubMenu" value="hasSubMenu" class="check">Has Sub Menu
+        <input type="text" name="href" placeholder="href"/>
+        <input type="checkbox" name="blank" value="blank" class="check">_blank
+        <input type="checkbox" name="self" value="self" class="check">_self
+        <select name="Parent_menu">
+          <option value="parentMenu">Parent Menu</option>
+          <option *ngFor="let menu of menuSelect" value="{{menu}}">{{menu}}</option>
+        </select>
+        <input type="submit" value="Send" />
+        </form>
         </div>
-        <div class="checkbox-io">
-          <input type="checkbox" name="hasSubMenu">
-        </div>
-        <div class="href-io">
-          <input type="text" name="href" placeholder="Href">
-        </div>
-        <div class="twoCheckbox-io">
-          <input type="checkbox" name="blank">
-          <input type="checkbox" name="self">
-        </div>
-        <div class="parentMenu-io">
-          <select name="parentMenu">
-            <option value="selectParent" selected>--select parent menu--</option>
-            <option *ngFor="let menu of menuSelect" value="{{menu}}">{{menu}}</option>
-          </select>
-        </div>
-        <button name="submit">Add New Menu Item</button>
-    </div>
   </div>

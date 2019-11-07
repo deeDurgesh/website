@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Route } from '@angular/router';
-import { Location } from '@angular/common';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 
 const routes = {
@@ -12,17 +12,23 @@ const routes = {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}]
 })
 export class AppComponent {
   hide = false;
   breadcrumb: string;
+  profileContainerOpen = false;
 
-  constructor(location: Route) {
-    location.
-  }
+  constructor(private location:Location) {}
 
   toggleSideNav() {
     this.hide = !this.hide;
+  }
+  getPath(){
+    console.log(this.location.path());
+  }
+  closeProfileContainer() {
+    this.profileContainerOpen = !this.profileContainerOpen;
   }
 }
