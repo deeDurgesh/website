@@ -1,0 +1,32 @@
+.user-header{
+    display: block;
+    width: 100%;
+}
+.two-logo{
+    display: inline-block;
+    width: 9%;
+    float: left;
+}
+.width-two-logo{
+    display: inline-block;
+    width: 9%;
+    float: right;
+}
+.header-img{
+    height: 25px;
+    width: 25px;
+}
+.search{
+    border: 0px;
+    outline: 0px;
+}
+hr{
+    height: 3px;
+    background-color: blue;
+    margin-top: 0px;
+    width: 100%;
+}
+.searchBar{
+  display: inline-block;
+  width:81%
+}
