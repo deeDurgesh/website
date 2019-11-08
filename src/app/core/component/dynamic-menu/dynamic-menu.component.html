@@ -1,21 +1,33 @@
 <div class="form-container">
       <div class="form-style-6">
-        <form>
-        <input type="text" name="field1" placeholder="Title"/>
-        <select name="icon">
+        <form [formGroup]="angForm">
+        <input type="text" placeholder="Title" class="form-control" formControlName="title"/>
+        <div *ngIf="angForm.controls['title'].invalid && (angForm.controls['title'].dirty || angForm.controls['title'].touched)">
+          <div *ngIf="angForm.controls['title'].errors.required"></div>
+        </div>
+        <select class="form-control" formControlName="icon">
           <option value="icon">icon</option>
           <option value=""></option>
         </select>
-        <input type="text" name="field2" placeholder="routerLink"/>
+        <div *ngIf="angForm.controls['icon'].invalid && (angForm.controls['icon'].dirty || angForm.controls['icon'].touched)">
+          <div *ngIf="angForm.controls['icon'].errors.required"></div>
+        </div>
+        <input type="text" class="form-control" formControlName="routerLink" placeholder="routerLink"/>
+        <div *ngIf="angForm.controls[routerLink].invalid && (angForm.controls['routerLink'].dirty || angForm.controls['routerLink'].touched)">
+          <div *ngIf="angForm.controls['routerLink'].errors.required"></div>
+        </div>
         <input type="checkbox" name="hasSubMenu" value="hasSubMenu" class="check">Has Sub Menu
-        <input type="text" name="href" placeholder="href"/>
+        <input type="text" placeholder="href" class="form-control" formControlName="href"/>
+        <div *ngIf="angForm.controls['href'].invalid && (angForm.controls['href'].dirty || angForm.controls['href'].touched)">
+          <div *ngIf="angForm.controls['href'].errors.required"></div>
+        </div>
         <input type="checkbox" name="blank" value="blank" class="check">_blank
         <input type="checkbox" name="self" value="self" class="check">_self
         <select name="Parent_menu">
           <option value="parentMenu">Parent Menu</option>
           <option *ngFor="let menu of menuSelect" value="{{menu}}">{{menu}}</option>
         </select>
-        <input type="submit" value="Send" />
+        <input type="submit" value="Send"/>
         </form>
         </div>
   </div>

@@ -16,6 +16,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { BreadcrumbComponent } from './core/component/breadcrumb/breadcrumb.component';
 import { UserComponent } from './core/component/user/user.component';
 import { CommonRoutingComponent } from './core/component/common-routing/common-routing.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,6 +40,8 @@ import { CommonRoutingComponent } from './core/component/common-routing/common-r
     MatButtonModule,
     MatCardModule,
     MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

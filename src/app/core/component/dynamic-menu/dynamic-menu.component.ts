@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-dynamic-menu',
@@ -8,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class DynamicMenuComponent implements OnInit {
   
   menuSelect: any[] = ['Dashboard', 'Users', 'UI Features','Buttons','Cards','Lists','Grids','Expansion Panel','Dynamic Menu','Mailbox','Chat','Form Controls','Autocomplete','Checkbox','Datepicker','Form field'];
-  constructor() { }
+ angForm: FormGroup;
+ 
+  constructor(private fb: FormBuilder) { 
+    this.createForm();
+  }
 
-  ngOnInit() {
+  ngOnInit() {}
+  createForm(){
+    this.angForm = this.fb.group({
+      title: ['', Validators.required],
+      
+    })
   }
 
 }
