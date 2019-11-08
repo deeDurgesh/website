@@ -2,9 +2,7 @@
       <div class="form-style-6">
         <form [formGroup]="angForm" (ngSubmit)="postData(angForm)">
         <input type="text" placeholder="Title" class="form-control" formControlName="title"[(ngModel)]="tModel"/>
-        <div
-          *ngIf="angForm.controls['title']?.invalid && (angForm.controls['title'].dirty || angForm.controls['title'].touched)"
-          class="alert">
+        <div *ngIf="angForm.controls['title']?.invalid && (angForm.controls['title'].dirty || angForm.controls['title'].touched)" class="alert">
           <div *ngIf="angForm.controls['title'].errors.required">*Title is required</div>
         </div>
         <select class="form-control" formControlName="icon">
@@ -15,7 +13,7 @@
           <div *ngIf="angForm.controls['icon'].errors.required">*Icon is required</div>
         </div>
         <input type="text" class="form-control" formControlName="routerLink" placeholder="routerLink" [(ngModel)]="rModel"/>
-        <div *ngIf="angForm.controls[routerLink]?.invalid && (angForm.controls['routerLink'].dirty || angForm.controls['routerLink'].touched)" class="alert">
+        <div *ngIf="angForm.controls['routerLink']?.invalid && (angForm.controls['routerLink'].dirty ||angForm.controls['routerLink'].touched)" class="alert">
           <div *ngIf="angForm.controls['routerLink'].errors.required">*RouterLink is required</div>
         </div>
         <input type="checkbox" name="hasSubMenu" value="hasSubMenu" class="check form-control" formControlName="hasSubMenu">Has Sub Menu
