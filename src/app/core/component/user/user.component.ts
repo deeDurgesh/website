@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  showSearch = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  showSearchBar(){
+    this.showSearch = !this.showSearch;
+  }
 }

@@ -1,28 +1,44 @@
 <div class="user-header">
     <div class="two-logo">
-        <span class="addUser">
-            <button><img class="header-img" src="../../../../assets/images/add-user-button.png" alt="add user"></button>
-        </span>
-        <span class="searchButton">
-            <button><img class="header-img" src="../../../../assets/images/magnifying-glass.png"
-                alt="search button"></button>
-        </span>
+        <div class="addUser">
+            <button>
+                    <div class="addUserDiv">
+                        <img class="header-img" src="../../../../assets/images/add-user-button.png" alt="add user">
+                    </div>
+            </button>
+        </div>
+        <div class="searchButton">
+            <button (click)="showSearchBar()">
+                    <div class="searchButtonDiv">
+                        <img class="header-img" src="../../../../assets/images/magnifying-glass.png" alt="search button">
+                    </div>
+            </button>  
+        </div>
     </div>
-    <div class="searchBar">
-        <label for="search">
-            <span>Search User By Name...</span>
-        </label>
-        <div>
+    <div class="searchBar" (click)="dragLabel()" [class.close]="showSearch">
+        <div class="searchDiv">
             <input type="text" class="search">
-            <hr>
+            <span class="searchSpan">
+                <label for="search">
+                    <span>Search User By Name...</span>
+                </label>
+            </span>
         </div>
     </div>
     <div class="width-two-logo">
-        <span class="small-width-button">
-            <button><img class="header-img" src="../../../../assets/images/table.png" alt="short-width-button"></button>
-        </span>
-        <span class="long-width-button">
-            <button><img class="header-img" src="../../../../assets/images/list.png" alt="long-width-button"></button>
-        </span>
+        <div class="small-width-button">
+            <button>
+                    <div class="small-width-button-div">
+                        <img class="header-img" src="../../../../assets/images/table.png" alt="short-width-button">
+                    </div>    
+            </button>
+        </div>
+        <div class="long-width-button">
+            <button>
+                    <div class="long-width-button-div">
+                        <img class="header-img" src="../../../../assets/images/wide-menu.png" alt="long-width-button">
+                    </div> 
+            </button>
+        </div>
     </div>
 </div>
