@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
   showSearch = false;
-
+  dragItem = false;
   constructor() { }
 
   ngOnInit() {
@@ -15,5 +15,8 @@ export class UserComponent implements OnInit {
 
   showSearchBar(){
     this.showSearch = !this.showSearch;
+  }
+  dragLabel(){
+    this.dragItem = !this.dragItem;
   }
 }

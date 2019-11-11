@@ -1,6 +1,7 @@
 .user-header{
     display: block;
     width: 100%;
+    box-sizing: border-box;
 }
 .two-logo{
     display: inline-block;
@@ -26,13 +27,10 @@
 .addUser button, .searchButton button, .small-width-button button, .long-width-button button{
     background: none;
 }
-.searchDiv input{
-    position: absolute;
-    height: 26px;
-    text-align: center;
-}
 .searchDiv{
     position: relative;
+    width: 100%;
+    height: 40px;
 }
 
 .searchSpan span{
@@ -40,31 +38,36 @@
     position: absolute;
     z-index: 999;
     width: 99%;
-    /* top: -10px;
-    font-size: 11px; */
+}
+.userSpan{
+    color: grey;
+    font-size: 15px;
+}
+.userSpan.drag{
+    top: -10px;
+    font-size: 11px;
+    color: rgb(40, 53, 147);
+    width:100%;
 }
 .search{
     border: 0px;
     outline: 0px;
     width: 100%;
-}
-hr{
-    height: 1px;
-    background-color: blue;
-    margin-top: 0px;
-    width: 100%;
+    border-bottom: 1px solid rgb(40, 53, 147);
     position: absolute;
+    height: 36px;
+    text-align: center;
 }
 .searchBar{
   display: inline-block;
   width:80%;
-  transition: width 0 ease;
-  overflow: hidden;
 }
 .searchBar.close{
-    width: 0px;
     display: none;
 }
 .search:focus{
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid rgb(40, 53, 147);
+}
+.user-list-container{
+    margin: 10px;
 }

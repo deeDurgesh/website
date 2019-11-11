@@ -15,12 +15,12 @@
             </button>  
         </div>
     </div>
-    <div class="searchBar" (click)="dragLabel()" [class.close]="showSearch">
+    <div class="searchBar" [class.close]="showSearch" (click)="dragLabel()">
         <div class="searchDiv">
             <input type="text" class="search">
             <span class="searchSpan">
                 <label for="search">
-                    <span>Search User By Name...</span>
+                    <span [class.drag]="dragItem" class="userSpan">Search User By Name...</span>
                 </label>
             </span>
         </div>
@@ -41,4 +41,8 @@
             </button>
         </div>
     </div>
+</div>
+
+<div class="user-list-container">
+    <app-user-list></app-user-list>
 </div>

@@ -17,6 +17,8 @@ import { BreadcrumbComponent } from './core/component/breadcrumb/breadcrumb.comp
 import { UserComponent } from './core/component/user/user.component';
 import { CommonRoutingComponent } from './core/component/common-routing/common-routing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddNewUserComponent } from './core/component/add-new-user/add-new-user.component';
+import { UserListComponent } from './core/component/user-list/user-list.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DynamicMenuComponent,
     BreadcrumbComponent,
     UserComponent,
-    CommonRoutingComponent
+    CommonRoutingComponent,
+    AddNewUserComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
