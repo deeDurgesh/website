@@ -5,7 +5,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent{
+export class HeaderComponent {
   @Output() sideNavToggle = new EventEmitter<void>();
 
   constructor() { }
@@ -13,7 +13,7 @@ export class HeaderComponent{
   toggleNav() {
     this.sideNavToggle.emit();
   }
-  searchBar(){
-    
+  searchBar() {
+
   }
 }
