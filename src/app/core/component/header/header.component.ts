@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent{
   @Output() sideNavToggle = new EventEmitter<void>();
   @Output() closeContainer = new EventEmitter<void>();
-  openSerachBar = false;
+  openSerachBar = true;
   constructor() { }
 
   toggleNav() {
