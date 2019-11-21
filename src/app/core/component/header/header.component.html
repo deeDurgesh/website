@@ -9,11 +9,23 @@
                  <span class="spacebar"><input [class.close]="openSerachBar" type="text" placeholder="Type to search..."></span>
                  <span class="space"><button (click)="searchBar()"><img src="../../../../assets/images/search.png" alt="search"></button></span>
             </div>
-            <span class="space"><a href="#"><img src="../../../../assets/images/flag.png" alt="flag"></a></span>
+            <div class="flag">
+                <span class="space"><a href="#"><img src="../../../../assets/images/flag.png" alt="flag"></a></span>
+            </div>
             <span class="space"><a href="#"><img src="../../../../assets/images/switch-to-full-screen-button.png" alt="square"></a></span>
             <span class="space"><a href="#"><img src="../../../../assets/images/grid.png" alt="application"></a></span>
             <span class="space"><a href="#"><img src="../../../../assets/images/notification.png" alt="notification"></a></span>
             <span class="space"><a href="#"><img src="../../../../assets/images/user (1).png" alt="profile"></a></span>
         </div>
     </div>
+</div>
+<div class="flag-container1">
+        <div class="flag-big-container">
+                <div class="flag-container">
+                    <a class="flag-a" *ngFor="let lang of langs" href="">
+                        <span class="flagImg-span"><img src="{{lang.img}}" alt="{{lang.value}}"></span>
+                        <span class="flag-span">{{lang.title}}</span> 
+                    </a>   
+                </div> 
+            </div>
 </div>

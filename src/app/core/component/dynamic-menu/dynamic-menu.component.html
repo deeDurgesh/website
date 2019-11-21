@@ -6,7 +6,7 @@
           <div *ngIf="angForm.controls['title'].errors.required">*Title is required</div>
         </div>
         <select class="form-control" formControlName="icon">
-          <option value="icon">icon</option>
+          <option value="icon" selected>icon</option>
           <option value=""></option>
         </select>
         <div *ngIf="angForm.controls['icon']?.invalid && (angForm.controls['icon'].dirty || angForm.controls['icon'].touched)" class="alert">
@@ -24,7 +24,7 @@
         <input type="checkbox" name="blank" value="blank" class="check">_blank
         <input type="checkbox" name="self" value="self" class="check">_self
         <select name="Parent_menu" class="form-control" formControlName="parentMenu">
-          <option value="parentMenu">Parent Menu</option>
+          <option value="parentMenu" selected>Parent Menu</option>
           <option *ngFor="let menu of menuSelect" value="{{menu}}">{{menu}}</option>
         </select>
         <input type="submit" value="Send"/>
