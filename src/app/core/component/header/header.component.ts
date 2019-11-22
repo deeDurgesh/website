@@ -9,7 +9,7 @@ export class HeaderComponent{
   @Output() sideNavToggle = new EventEmitter<void>();
   @Output() closeContainer = new EventEmitter<void>();
   openSerachBar = true;
-
+  langBlock = true;
   langs: any = [
     {title: "English", img:"../../../../assets/images/united-kingdom.png", value: "united-kingdom"},
     {title:"German", img: "../../../../assets/images/germany.png", value:"german"},
@@ -25,5 +25,8 @@ export class HeaderComponent{
   }
   closeProfileContainer(){
     this.closeContainer.emit();
+  }
+  openLangBlock(){
+    this.langBlock = !this.langBlock;
   }
 }
