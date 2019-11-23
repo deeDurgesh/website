@@ -14,7 +14,7 @@
                 <div class="flag-container1" [class.langClose]="langBlock">
                     <div class="flag-container2">
                         <div class="flag-container">
-                            <a class="flag-a" *ngFor="let lang of langs" href="">
+                            <a class="flag-a" *ngFor="let lang of langs" (click)= "langSelect(lang.value)">
                                 <span class="flagImg-span"><img src="{{lang.img}}" alt="{{lang.value}}"></span>
                                 <span class="flag-span">{{lang.title}}</span> 
                             </a>   

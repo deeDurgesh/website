@@ -17,6 +17,8 @@ export class AppComponent {
   breadcrumb: string;
   profileContainerOpen = false;
 
+  
+
   toggleSideNav() {
     this.hide = !this.hide;
   }

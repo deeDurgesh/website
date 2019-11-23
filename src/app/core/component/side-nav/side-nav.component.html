@@ -9,9 +9,9 @@
               <div class="detail-container">
                 <span class="profile-img"><img src="../../../../assets/images/profile.png" alt="picture"></span>
                 <span class="data">                 
-                  <h4>Durgesh Gupta</h4>
-                  <h5>Web developer</h5>
-                  <p>Member since May 2016</p>
+                  <h4>{{'HOME.side-nav-data-name' | translate}}</h4>
+                  <h5>{{'HOME.side-nav-data-work' | translate}}</h5>
+                  <p>{{'HOME.side-nav-data-workTime' | translate}}</p>
                 </span>
               </div>
               <div class="icon-container">
@@ -24,19 +24,19 @@
               <div class="dashboard">
                 <a href="#" class="a-menu-dashboard" routerLink="/dashboard" routerLinkActive="active">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/dashboard.png" alt="dashboard"></span>
-                    <span class="menu-dash">Dashboard</span>
+                    <span class="menu-dash">{{'HOME.menu-container-dashboard' | translate}}</span>
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu"  routerLink="/user" routerLinkActive="active" (click)="navigate()">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/friends.png" alt="Users"></span>
-                    <span>User</span>
+                    <span>{{'HOME.menu-container-user' | translate}}</span>
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu" (click)="openSubDropdown()">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/laptop.png" alt="UI Feature"></span>
-                    <span>UI Feature</span>
+                    <span>{{'HOME.menu-container-ui-feature' | translate}}</span>
                     <img class="up-icon" [class.flip]="!subDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="arrow up">
                 </a>
                 <div class="sub-dropdown" [class.hide]="subDropdownHidden">
@@ -50,26 +50,26 @@
                 <a href="#" class="a-menu" routerLink="/dynamicMenu" routerLinkActive="active" (click)="navigate()">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/list.png"
                         alt="Dynamic Menu"></span>
-                    <span>Dynamic Menu</span>
+                    <span>{{'HOME.menu-container-dynamic-menu' | translate}}</span>
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/black-back-closed-envelope-shape.png" alt="Mailbox"></span>
-                    <span>Mailbox</span>
+                    <span>{{'HOME.menu-container-mailbox' | translate}}</span>
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/comment.png" alt="Chat"></span>
-                    <span>Chat</span>
+                    <span>{{'HOME.menu-container-chat' | translate}}</span>
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu" (click)="openSubFormDropdown()">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/code.png"
                         alt="Form Controls"></span>
-                    <span>Form Controls</span>
+                    <span>{{'HOME.menu-container-form-controls' | translate}}</span>
                     <img class="up-icon" [class.flip]="!subFormDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
                 <div class="sub-dropdown" [class.hide]="subFormDropdownHidden">
@@ -82,7 +82,7 @@
               <div>
                 <a href="#" class="a-menu" (click)="openSubTableDropdown()">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/grid.png" alt="Tables"></span>
-                    <span>Tables</span>
+                    <span>{{'HOME.menu-container-tables' | translate}}</span>
                     <img class="up-icon" [class.flip]="!subTableDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
                 <div class="sub-dropdown" [class.hide]="subTableDropdownHidden">
@@ -95,7 +95,7 @@
               <div>
                 <a href="#" class="a-menu" (click)= "openSubPageDropdown()">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/pages.png" alt="Pages"></span>
-                    <span>Pages</span>
+                    <span>{{'HOME.menu-container-pages' | translate}}</span>
                     <img class="up-icon" [class.flip]="!subPageDropdownHidden" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
                 <div class="sub-dropdown" [class.hide]="subPageDropdownHidden">
@@ -108,13 +108,13 @@
               <div>
                 <a href="#" class="a-menu">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/calendar.png" alt="Schedule"></span>
-                    <span>Schedule</span>
+                    <span>{{'HOME.menu-container-schedule' | translate}}</span>
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/map2.png" alt="Maps"></span>
-                    <span>Maps</span>
+                    <span>{{'HOME.menu-container-maps' | translate}}</span>
                     <img class="up-icon" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
               </div>
@@ -122,14 +122,14 @@
               <div>
                 <a href="#" class="a-menu">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/dashboard.png" alt="Charts"></span>
-                    <span>Charts</span>
+                    <span>{{'HOME.menu-container-charts' | translate}}</span>
                     <img class="up-icon" src="../../../../assets/images/caret-arrow-up.png" alt="up arrow">
                 </a>
               </div>
               <div>
                 <a href="#" class="a-menu">
                     <span class="icon-menu"><img class="icon-container-img" src="../../../../assets/images/dashboard.png" alt="Drag & Drop"></span>
-                    <span>Drag & Drop</span>
+                    <span>{{'HOME.menu-container-drag-drop' | translate}}</span>
                 </a>
               </div>  
             </div>

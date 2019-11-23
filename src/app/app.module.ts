@@ -19,7 +19,13 @@ import { CommonRoutingComponent } from './core/component/common-routing/common-r
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddNewUserComponent } from './core/component/add-new-user/add-new-user.component';
 import { UserListComponent } from './core/component/user-list/user-list.component';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import{TranslateHttpLoader} from '@ngx-translate/http-loader';
+import{HttpClientModule, HttpClient} from '@angular/common/http';
 
+export function HttpLoaderFactory(http: HttpClient){
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -45,7 +51,15 @@ import { UserListComponent } from './core/component/user-list/user-list.componen
     MatCardModule,
     MatSelectModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

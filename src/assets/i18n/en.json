@@ -1,0 +1,33 @@
+{
+    "HOME":{
+        "side-nav-data-name":"Durgesh Gupta",
+        "side-nav-data-work": "Web developer",
+        "side-nav-data-workTime": "Member since May 2016",
+        "menu-container-dashboard": "Dashboard",
+        "menu-container-user" : "User",
+        "menu-container-ui-feature": "UI Feature",
+        "menu-container-dynamic-menu" : "Dynamic Menu",
+        "menu-container-mailbox": "Mailbox",
+        "menu-container-chat": "Chat",
+        "menu-container-form-controls": "Form Controls",
+        "menu-container-tables": "Tables",
+        "menu-container-pages": "Pages",
+        "menu-container-schedule": "Schedule",
+        "menu-container-maps": "Maps",
+        "menu-container-charts" : "Charts",
+        "menu-container-drag-drop" : "Drag & Drop",
+        "dynamic-menu-form-title": "Title",
+        "dynamic-menu-form-icon": "icon",
+        "dynamic-menu-form-routerLink": "routerLink",
+        "dynamic-menu-form-href": "href",
+        "dynamic-menu-form-blank":"_blank",
+        "dynamic-menu-form-self": "_self",
+        "dynamic-menu-form-parent-menu":"Parent Menu",
+        "dynamic-menu-form-Send": "Send",
+        "dynamic-menu-form-error-title": "Title is required",
+        "dynamic-menu-form-error-icon": "Icon is required",
+        "dynamic-menu-form-error-routerLink": "RouterLink is required",
+        "dynamic-menu-form-error-href": "Href is required"
+
+    }
+}

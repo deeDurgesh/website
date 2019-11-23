@@ -1,0 +1,32 @@
+{
+    "HOME":{
+        "side-nav-data-name":"Durgesh Gupta",
+        "side-nav-data-work": "développeur web",
+        "side-nav-data-workTime": "Membre depuis mai 2016",
+        "menu-container-dashboard": "Tableau de bord",
+        "menu-container-user" : "Utilisatrice",
+        "menu-container-ui-feature": "Fonction d'interface utilisateur",
+        "menu-container-dynamic-menu" : "Menu dynamique",
+        "menu-container-mailbox": "Boites aux lettres",
+        "menu-container-chat": "Bavarder",
+        "menu-container-form-controls": "Contrôles de formulaire",
+        "menu-container-tables": "les tables",
+        "menu-container-pages": "Des pages",
+        "menu-container-schedule": "Programme",
+        "menu-container-maps": "Plans",
+        "menu-container-charts" : "Graphiques",
+        "menu-container-drag-drop" : "Drag & Drop",
+        "dynamic-menu-form-title": "Titre",
+        "dynamic-menu-form-icon": "icône",
+        "dynamic-menu-form-routerLink": "routerLink",
+        "dynamic-menu-form-href": "href",
+        "dynamic-menu-form-blank":"_blanche",
+        "dynamic-menu-form-self": "_soi",
+        "dynamic-menu-form-parent-menu":"Menu Parent",
+        "dynamic-menu-form-Send": "Envoyer",
+        "dynamic-menu-form-error-title": "Le titre est obligatoire",
+        "dynamic-menu-form-error-icon": "L'icône est requise",
+        "dynamic-menu-form-error-routerLink": "routerLink est requis",
+        "dynamic-menu-form-error-href": "Href est requis"
+    }
+}

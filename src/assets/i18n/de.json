@@ -1,0 +1,34 @@
+{
+    "HOME":{
+        "side-nav-data-name":"Durgesh Gupta",
+        "side-nav-data-work": "Web-Entwickler",
+        "side-nav-data-workTime": "Mitglied seit Mai 2016",
+        "menu-container-dashboard": "Instrumententafel",
+        "menu-container-user" : "Benutzerin",
+        "menu-container-ui-feature": "UI-Funktion",
+        "menu-container-dynamic-menu" : "Dynamisches Menü",
+        "menu-container-mailbox": "Briefkasten",
+        "menu-container-chat": "Plaudern",
+        "menu-container-form-controls": "Formularsteuerelemente",
+        "menu-container-tables": "Tabellen",
+        "menu-container-pages": "Seiten",
+        "menu-container-schedule": "Zeitplan",
+        "menu-container-maps": "Karten",
+        "menu-container-charts" : "Diagramme",
+        "menu-container-drag-drop" : "Ziehen und loslassen",
+        "dynamic-menu-form-title": "Titel",
+        "dynamic-menu-form-icon": "Symbol",
+        "dynamic-menu-form-routerLink": "routerLink",
+        "dynamic-menu-form-href": "href",
+        "dynamic-menu-form-blank":"_leer",
+        "dynamic-menu-form-self": "_selbst",
+        "dynamic-menu-form-parent-menu":"Übergeordnetes Menü",
+        "dynamic-menu-form-Send": "Senden",
+        "dynamic-menu-form-error-title": "Titel ist erforderlich",
+        "dynamic-menu-form-error-icon": "Icon ist erforderlich",
+        "dynamic-menu-form-error-routerLink": "RouterLink ist erforderlich",
+        "dynamic-menu-form-error-href": "Href ist erforderlich"
+
+
+    }
+}

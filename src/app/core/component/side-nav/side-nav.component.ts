@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, Input } from '@angular/core';
 import { DropServiceService } from '../../../services/drop-service.service';
+
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
